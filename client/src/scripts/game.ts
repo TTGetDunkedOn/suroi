@@ -214,7 +214,7 @@ export class Game {
 
         this.music = sound.add("menu_music", {
             url: `./audio/music/menu_music${this.console.getBuiltInCVar("cv_use_old_menu_music") ? "_old" : MODE.specialMenuMusic ? `_${MODE.idString}` : ""}.mp3`,
-            singleInstance: true,
+            singleInstance: false,
             preload: true,
             autoPlay: true,
             volume: this.console.getBuiltInCVar("cv_music_volume")
